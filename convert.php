@@ -23,7 +23,7 @@ $ffmpeg =
   " " .
   $target_file .
   "  </dev/null >/dev/null 2>>/var/log/ffmpeg.log ";
-if ($env["debug"] == true) {
+if ($env["DEBUG"] == true) {
     echo $ffmpeg;
 }
 
