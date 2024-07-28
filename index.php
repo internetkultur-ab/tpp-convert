@@ -46,7 +46,7 @@
           <label for="email">Din mejladress:</label>
           <input type="email" name="email" />
           <label for="file">Din inspelning:</label>
-          <input type="file" name="file" accept="accept="audio/*" /><br />
+          <input type="file" name="file" accept="audio/*" /><br />
           <button>Konvertera</button><br />
           <p id="result"></p>
           <p>Filen raderas från servern vid midnatt.</p>
@@ -63,6 +63,6 @@
       </p>
     </footer>
     <script data-collect-dnt="true" async defer src="https://api.internetkultur.se/latest.js"></script>
-    <noscript><img src="https://api.internetkultur.se/hello.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+    <noscript><img src="https://api.internetkultur.se/hello.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
   </body>
 </html>
