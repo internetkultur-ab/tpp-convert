@@ -9,7 +9,7 @@ if (!isset($_FILES["file"])) {
   echo "Du laddade inte upp något";
   die();
 }
-$target_dir = "/var/www/tpp/uploads/";
+$target_dir = $env["TARGET_DIR"];
 $newname =
   date("ymd_Gi_") .
   md5(rand(10000, 99999) . basename($_FILES["file"]["name"])) .
@@ -22,7 +22,7 @@ $ffmpeg =
   $_FILES["file"]["tmp_name"] .
   " " .
   $target_file .
-  "  </dev/null >/dev/null 2>>/var/www/tpp/ffmpeg.log ";
+  "  </dev/null >/dev/null 2>>/var/log/ffmpeg.log ";
 
 echo shell_exec($ffmpeg);
 if (
