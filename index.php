@@ -62,17 +62,7 @@
         >
       </p>
     </footer>
-    <!-- 100% privacy-first analytics -->
-    <script
-      async
-      defer
-      src="https://api.internetkultur.se/latest.js"
-    ></script>
-    <noscript
-      ><img
-        src="https://api.internetkultur.se/noscript.gif"
-        alt=""
-        referrerpolicy="no-referrer-when-downgrade"
-    /></noscript>
+    <script data-collect-dnt="true" async defer src="https://api.internetkultur.se/latest.js"></script>
+    <noscript><img src="https://api.internetkultur.se/hello.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
   </body>
 </html>
