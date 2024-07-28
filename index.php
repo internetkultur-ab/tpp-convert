@@ -59,7 +59,7 @@
         En tjänst från
         <a href="https://internetkultur.se"
           >Alex Nilsson Internetkultur AB &nearr;</a
-        >
+        > byggd med <a href="https://github.com/internetkultur-ab/tpp-convert">öppen källkod &nearr;</a>
       </p>
     </footer>
     <script data-collect-dnt="true" async defer src="https://api.internetkultur.se/latest.js"></script>
