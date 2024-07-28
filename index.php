@@ -66,11 +66,11 @@
     <script
       async
       defer
-      src="https://scripts.simpleanalyticscdn.com/latest.js"
+      src="https://api.internetkultur.se/latest.js"
     ></script>
     <noscript
       ><img
-        src="https://queue.simpleanalyticscdn.com/noscript.gif"
+        src="https://api.internetkultur.se/noscript.gif"
         alt=""
         referrerpolicy="no-referrer-when-downgrade"
     /></noscript>
