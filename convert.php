@@ -16,13 +16,12 @@ $newname =
   "." .
   pathinfo($_FILES["file"]["name"], PATHINFO_EXTENSION);
 $target_file = $target_dir . $newname;
-
 $ffmpeg =
-  "ffmpeg -y -acodec pcm_s16le -f s16le -ac 1 -ar 8000 -i " .
+  "ffmpeg -i " .
   $_FILES["file"]["tmp_name"] .
-  " " .
+  " -ac 1 -ar 8000 -map_metadata -1 " .
   $target_file .
-  "  </dev/null >/dev/null 2>>/var/log/ffmpeg.log ";
+  " -y </dev/null >/dev/null 2>>/var/log/ffmpeg.log ";
 if ($env["DEBUG"] == true) {
     echo $ffmpeg;
 }
