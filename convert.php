@@ -13,8 +13,7 @@ $target_dir = $env["TARGET_DIR"];
 $newname =
   date("ymd_Gi_") .
   md5(rand(10000, 99999) . basename($_FILES["file"]["name"])) .
-  "." .
-  pathinfo($_FILES["file"]["name"], PATHINFO_EXTENSION);
+  ".wav";
 $target_file = $target_dir . $newname;
 $ffmpeg =
   "ffmpeg -i " .
